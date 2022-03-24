@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather Gifcast</title>
+</head>
+<body>
+    <header><h1>Weather Gifcast</h1></header>
+    <form action="search-location" id="location-search">
+        <label for="location">Enter Location</label>
+        <input type="text" id="location">
+    <button type="reset" form="location-search"  id="search">Search</button>
+    </form>
+
+    <div class="weather-card">
+        <div class="gif-container">
+            <img src="" alt="gif" id="weather-gif">
+        </div>
+        <div class="weather">
+            <h1><span id="temp"></span> &#176<span id="scale"></span></h1>
+            <button id="convert">Convert to &#176<span id="convert-scale">C</span></button>
+        </div>
+    </div>
+    
+</body>
+</html>

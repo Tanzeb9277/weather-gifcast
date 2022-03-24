@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header{
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+header h1{
+    font-size: 48px;
+    padding: 15px;
+}
+
+form{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.weather-card{
+    background-color: aliceblue;
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+
+}
+
+.weather-card  > *{
+    flex: 1 1 0%;
+}
+
+.gif-container{
+    display: flex;
+}
+.gif-container img{
+    width: 100%;
+}
+
+.weather{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.weather h1{
+    font-size: 48px;
+    flex: 1 1 0%;
+}
