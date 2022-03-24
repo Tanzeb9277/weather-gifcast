@@ -5,6 +5,7 @@ const search = document.querySelector('#search');
 const scale =  document.querySelector('#scale')
 const convert = document.querySelector('#convert');
 const convertScale = document.querySelector('#convert-scale');
+const city = document.querySelector('#city');
 let currentMeasurement = 'imperial';
 let currentLocation = 'Atlanta';
 
@@ -23,6 +24,7 @@ async function getWeather(location='Atlanta', measurement='imperial') {
         , {mode: 'cors'});
         const weatherData = await response.json();
         temp.innerText = Math.round(weatherData.main.temp);
+        city.innerHTML =  weatherData.name;
         if(measurement == 'imperial'){
             scale.innerText = 'F'
         }else{
